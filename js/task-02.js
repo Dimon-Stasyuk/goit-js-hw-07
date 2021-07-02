@@ -7,21 +7,18 @@ const ingredients = [
   'Приправы',
 ];
 
+const ingredientsListEl = document.querySelector('#ingredients');
 
-const potatoEl = document.createElement('li')
-potatoEl.textContent = ingredients[0]
+const makeIngredientsList = elements => {
+  return elements.map(element => {
+  const itemEl = document.createElement('li')
+  itemEl.textContent = element
+    return itemEl;
+ })
+}
 
-const mushroomsEl = document.createElement('li')
-mushroomsEl.textContent = ingredients[1]
+const items = makeIngredientsList(ingredients)
+ingredientsListEl.append(...items)
 
-const garlicEl = document.createElement('li')
-garlicEl.textContent = ingredients[2]
 
-const tomatoesEl = document.createElement('li')
-tomatoesEl.textContent = ingredients[3]
 
-const greensEl = document.createElement('li')
-greensEl.textContent = ingredients[4]
-
-const condimentsEl = document.createElement('li')
-condimentsEl.textContent = ingredients[5]

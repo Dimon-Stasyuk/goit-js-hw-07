@@ -18,3 +18,4 @@ console.log(`Количество элементов: ${secondEl.length}`)
 
 console.log(`Категория: ${thirdTitle.textContent}`)
 console.log(`Количество элементов: ${thirdEl.length}`)
+
